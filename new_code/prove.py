@@ -1,20 +1,12 @@
-from Motocicleta import Motocicleta
-from Camión import Camion
-from Carro import Carro
-prueba = Motocicleta("azul",20)
+from Flota import Flota
 
-valor = prueba.calcular_costo()
+#Esta prueba es para marco
 
-print(valor)
-print("\n")
-prueba1 = Camion("Verde",5000)
+prueba = Flota()
+print("Bienvenido, a la prueba de nacho, es un ciclo donde se ingresaran autos 5, para la prueba, luego se genera un reporte de los mismos\n")
+for i in range(6):
+    prueba.agregar_vehiculo()
 
-valor2 = prueba1.calcular_costo()
-print(valor2)
-print("\n")
 
-prueba2 = Carro("Lila",300)
-
-valor3 = prueba2.calcular_costo()
-print(valor3)
+prueba.generar_reporte()
 
